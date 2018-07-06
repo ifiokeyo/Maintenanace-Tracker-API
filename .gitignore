@@ -1,0 +1,15 @@
+/server/.env
+/.vscode
+/server/api/.DS_Store
+/server/.DS_Store
+/migrations/.DS_Store
+/server/models/.DS_Store
+/migrations/__pycache__
+/server/__pycache__
+/server/api/__pycache__
+/server/models/__pycache__
+/test/__pycache__
+*.pyc
+*.pyo
+/.DS_Store
+.DS_Store
