@@ -46,6 +46,7 @@ Development setup
 - Run the app:
 
   .. code-block:: console
+  
      $ cd server
 
      $ python main.py
@@ -53,6 +54,7 @@ Development setup
 - Run tests:
 
   .. code-block:: console
+  
      $ cd test
 
      $ python -m unittest
