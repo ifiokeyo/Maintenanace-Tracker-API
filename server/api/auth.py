@@ -65,9 +65,7 @@ class LoginResource(Resource):
         if not check_pw:
             return {
                 "status": "fail",
-                "data": {
-                    "message": "Wrong Password"
-                }
+                "message": "Wrong Password"
             }, 401
 
         _user = user.serialize()

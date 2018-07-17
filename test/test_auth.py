@@ -46,6 +46,16 @@ class authTestCase(BaseTestCase):
         self.assertEqual(response_data['data']['message'], "User loggedin successfully")
         self.assert_status(response, 200)
 
+    def test_user_with_wron_password_not_logged_in(self):
+        response = self.client.post('/api/v1/auth/login', data=json.dumps({
+            "email": "joseph.cobhams@andela.com",
+            "password": "andel"
+        }), content_type="application/json")
+
+        response_data = json.loads(response.data)
+        self.assertEqual(response_data['status'], 'fail')
+        self.assertEqual(response_data['message'], "Wrong Password")
+        self.assert_status(response, 401)
 
 
 if __name__ == '__main__':
