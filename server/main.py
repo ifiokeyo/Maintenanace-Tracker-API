@@ -1,5 +1,5 @@
 import os
-from os.path import dirname, join
+from os.path import split, abspath
 from flask import Flask, jsonify
 from flask_migrate import Migrate
 from flask_restful import Api
@@ -9,7 +9,7 @@ from datetime import timedelta
 from flask_jwt_extended import JWTManager
 
 
-dotenv_path = join(dirname(__file__), '.env')
+dotenv_path = split(abspath(__file__))[0].replace('server', '.env')
 load_dotenv(dotenv_path)
 
 

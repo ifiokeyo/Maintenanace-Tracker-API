@@ -32,7 +32,7 @@ Development setup
      $ pip install -r requirements.txt
 
 
-- Copy ``.env_sample`` into ``.env`` in the ``server`` directory which is inside the base folder of the project.
+- Copy ``.env_sample`` into ``.env`` which is inside the base folder of the project.
   You should adjust it according to your own local settings. To set up
   ``postgres`` database locally you can
   `follow this <http://exponential.io/blog/2015/02/21/install-postgresql-on-mac-os-x-via-brew/>`_.
@@ -46,7 +46,6 @@ Development setup
 - Run the app:
 
   .. code-block:: console
-  
      $ cd server
 
      $ python main.py
@@ -54,7 +53,6 @@ Development setup
 - Run tests:
 
   .. code-block:: console
-  
      $ cd test
 
      $ python -m unittest

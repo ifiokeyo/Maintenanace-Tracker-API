@@ -1,9 +1,9 @@
 import os
-from os.path import join, dirname
+from os.path import abspath, split, dirname
 from dotenv import load_dotenv
 
 
-dotenv_path = join(dirname(__file__), '.env')
+dotenv_path = split(abspath(__file__))[0].replace('server', '.env')
 load_dotenv(dotenv_path)
 
 
