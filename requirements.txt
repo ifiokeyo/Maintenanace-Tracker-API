@@ -56,7 +56,7 @@ py==1.5.2
 py4j==0.10.6
 pyasn1==0.4.2
 pycparser==2.18
-Pygments==2.2.0
+Pygments==2.7.4
 PyHive==0.5.1
 PyJWT==1.4.2
 pykerberos==1.2.1
