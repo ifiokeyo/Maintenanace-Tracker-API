@@ -38,7 +38,7 @@ jmespath==0.9.3
 jsonschema==2.6.0
 Mako==1.0.7
 MarkupSafe==1.0
-mistune==0.8.3
+mistune==2.0.3
 mysql-connector-python==8.0.6
 nbconvert==5.3.1
 nbformat==4.4.0
